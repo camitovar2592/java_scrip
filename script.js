@@ -33,12 +33,22 @@
 // let metros = (distanciaKm*1000);
 // console.log(`Hola la distancia en metros es ${metros}`)
 
-let precio = Number(prompt('Digite el precio del producto'));
-let descuento = precio * 0.8;
-console.log(`Hola el precio con descuento es ${descuento}`)
+// let precio = Number(prompt('Digite el precio del producto'));
+// let descuento = precio * 0.8;
+// console.log(`Hola el precio con descuento es ${descuento}`)
 
-let nota1 = Number(prompt('Digite la nota 1'));
-let nota2 = Number(prompt('Digite la nota 2'));
-let nota3 = Number(prompt('Digite la nota 3'));
-let promedio = (nota1 + nota2 + nota3) / 3;
-console.log(`Hola Alumno, la nota promedio es ${promedio}`)
+// let nota1 = Number(prompt('Digite la nota 1'));
+// let nota2 = Number(prompt('Digite la nota 2'));
+// let nota3 = Number(prompt('Digite la nota 3'));
+// let promedio = (nota1 + nota2 + nota3) / 3;
+// console.log(`Hola Alumno, la nota promedio es ${promedio}`)
+
+let dia = Number(prompt('Digite los dias'));
+let diaHora = dia * 24;
+let diaMinuto = diaHora * 60;
+console.log(`Hola, los dias introducidos equivalen a ${diaHora} horas y a ${diaMinuto} minutos`)
+
+let km = Number(prompt('Digite los Km recorridos'));
+let tiempo = Number(prompt('Digite las horas transcurridas'));
+let velocidad = km / tiempo;
+console.log(`Hola, la velocidad promedio de tu viaje fue ${velocidad} km/hr`)
