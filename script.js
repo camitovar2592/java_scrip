@@ -24,3 +24,11 @@ let altura = prompt('Digite la altura del triangulo');
 let base = prompt('Digite la altura del triangulo');
 let areaTriangulo = altura * base / 2;
 console.log(`Hola el area del triangulo es ${areaTriangulo}`)
+
+let centrigados = prompt('Digite la temperatura en Centrigados');
+let temperaturaFaren = ((centrigados*(9/5))+32);
+console.log(`Hola la temperatura en Fahrenheit es ${temperaturaFaren}`)
+
+let distanciaKm = prompt('Digite la distancia en Kilometros');
+let metros = (distanciaKm*1000);
+console.log(`Hola la distancia en metros es ${metros}`)
