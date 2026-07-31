@@ -21,7 +21,7 @@
 // console.log(`Hola ${nombre} tu peso en la luna es ${pesoLuna} Kg, tu peso en Marte es ${pesoMarte} Kg y tu peso en Venus es ${pesoVenus}Kg`)
 
 let altura = prompt('Digite la altura del triangulo');
-let base = prompt('Digite la altura del triangulo');
+let base = prompt('Digite la base del triangulo');
 let areaTriangulo = altura * base / 2;
 console.log(`Hola el area del triangulo es ${areaTriangulo}`)
 
