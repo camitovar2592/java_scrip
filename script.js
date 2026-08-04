@@ -43,12 +43,23 @@
 // let promedio = (nota1 + nota2 + nota3) / 3;
 // console.log(`Hola Alumno, la nota promedio es ${promedio}`)
 
-let dia = Number(prompt('Digite los dias'));
-let diaHora = dia * 24;
-let diaMinuto = diaHora * 60;
-console.log(`Hola, los dias introducidos equivalen a ${diaHora} horas y a ${diaMinuto} minutos`)
+// let dia = Number(prompt('Digite los dias'));
+// let diaHora = dia * 24;
+// let diaMinuto = diaHora * 60;
+// console.log(`Hola, los dias introducidos equivalen a ${diaHora} horas y a ${diaMinuto} minutos`)
 
-let km = Number(prompt('Digite los Km recorridos'));
-let tiempo = Number(prompt('Digite las horas transcurridas'));
-let velocidad = km / tiempo;
-console.log(`Hola, la velocidad promedio de tu viaje fue ${velocidad} km/hr`)
+// let km = Number(prompt('Digite los Km recorridos'));
+// let tiempo = Number(prompt('Digite las horas transcurridas'));
+// let velocidad = km / tiempo;
+// console.log(`Hola, la velocidad promedio de tu viaje fue ${velocidad} km/hr`)
+
+let peso = Number(prompt('Cual es su peso en Kg?'));
+let libras = peso*2.20462
+console.log(`Hola tu peso en libras es ${libras}`);
+if(libras < 160){
+console.log('Tu categoria de competencia es peso Gallo');
+} else if (libras >= 160 && libras < 180) {
+    console.log('Tu categoria de competencia es peso Pluma');
+} else {
+    console.log('Tu categoria de competencia es peso Ligero')
+}
