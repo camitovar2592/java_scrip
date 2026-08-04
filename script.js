@@ -59,7 +59,7 @@ let genero = (prompt('Digite su genero, unica opcion F o M'))
 
 console.log(`Hola tu peso en libras es ${libras}`);
 
-if(genero = 'M'){
+if(genero === 'M'){
 
     if(libras < 160){
     console.log('Tu categoria de competencia es peso Gallo Masculino');
