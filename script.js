@@ -53,29 +53,43 @@
 // let velocidad = km / tiempo;
 // console.log(`Hola, la velocidad promedio de tu viaje fue ${velocidad} km/hr`)
 
-let peso = Number(prompt('Cual es su peso en Kg?'));
-let libras = peso*2.20462
-let genero = (prompt('Digite su genero, unica opcion F o M'))
+// let peso = Number(prompt('Cual es su peso en Kg?'));
+// let libras = peso*2.20462
+// let genero = (prompt('Digite su genero, unica opcion F o M'))
 
-console.log(`Hola tu peso en libras es ${libras}`);
+// console.log(`Hola tu peso en libras es ${libras}`);
+// if(genero === 'M'){
 
-if(genero === 'M'){
+//     if(libras < 160){
+//     console.log('Tu categoria de competencia es peso Gallo Masculino');
+//     } else if (libras >= 160 && libras < 180) {
+//         console.log('Tu categoria de competencia es peso Pluma Masculino');
+//     } else {
+//         console.log('Tu categoria de competencia es peso Ligero Masculino')
+//     }
+// }
 
-    if(libras < 160){
-    console.log('Tu categoria de competencia es peso Gallo Masculino');
-    } else if (libras >= 160 && libras < 180) {
-        console.log('Tu categoria de competencia es peso Pluma Masculino');
-    } else {
-        console.log('Tu categoria de competencia es peso Ligero Masculino')
-    }
-}
+// else{
+//     if(libras < 115){
+//     console.log('Tu categoria de competencia es peso Gallo Femenina');
+//     } else if (libras >= 115 && libras < 135) {
+//         console.log('Tu categoria de competencia es peso Pluma Femenina');
+//     } else {
+//         console.log('Tu categoria de competencia es peso Ligero Femenina')
+//     }
+// }
 
-else{
-    if(libras < 115){
-    console.log('Tu categoria de competencia es peso Gallo Femenina');
-    } else if (libras >= 115 && libras < 135) {
-        console.log('Tu categoria de competencia es peso Pluma Femenina');
-    } else {
-        console.log('Tu categoria de competencia es peso Ligero Femenina')
-    }
+let cafe = prompt('que metodo de cafe prefieres francesa, moka o v60?');
+let gramos = Number(prompt('Cuanto gramos de cafe usaras?'));
+let agua;
+
+if (cafe == francesa){
+    agua = gramos * 15;
+    console.log('Necesitas ${agua} mililitros de agua');
+} else if (cafe == moka){
+    agua = gramos * 14;
+    console.log('Necesitas ${agua} mililitros de agua');
+} else if (cafe == v60){
+    agua = gramos * 16;
+    console.log('Necesitas ${agua} mililitros de agua');
 }
