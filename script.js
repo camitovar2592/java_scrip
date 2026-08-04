@@ -55,11 +55,27 @@
 
 let peso = Number(prompt('Cual es su peso en Kg?'));
 let libras = peso*2.20462
+let genero = (prompt('Digite su genero, unica opcion F o M'))
+
 console.log(`Hola tu peso en libras es ${libras}`);
-if(libras < 160){
-console.log('Tu categoria de competencia es peso Gallo');
-} else if (libras >= 160 && libras < 180) {
-    console.log('Tu categoria de competencia es peso Pluma');
-} else {
-    console.log('Tu categoria de competencia es peso Ligero')
+
+if(genero = 'M'){
+
+    if(libras < 160){
+    console.log('Tu categoria de competencia es peso Gallo Masculino');
+    } else if (libras >= 160 && libras < 180) {
+        console.log('Tu categoria de competencia es peso Pluma Masculino');
+    } else {
+        console.log('Tu categoria de competencia es peso Ligero Masculino')
+    }
+}
+
+else{
+    if(libras < 115){
+    console.log('Tu categoria de competencia es peso Gallo Femenina');
+    } else if (libras >= 115 && libras < 135) {
+        console.log('Tu categoria de competencia es peso Pluma Femenina');
+    } else {
+        console.log('Tu categoria de competencia es peso Ligero Femenina')
+    }
 }
