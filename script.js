@@ -79,17 +79,25 @@
 //     }
 // }
 
-let cafe = prompt('que metodo de cafe prefieres francesa, moka o v60?');
-let gramos = Number(prompt('Cuanto gramos de cafe usaras?'));
-let agua;
+// let cafe = prompt('que metodo de cafe prefieres francesa, moka o v60?');
+// let gramos = Number(prompt('Cuanto gramos de cafe usaras?'));
+// let agua;
 
-if (cafe == francesa){
-    agua = gramos * 15;
-    console.log('Necesitas ${agua} mililitros de agua');
-} else if (cafe == moka){
-    agua = gramos * 14;
-    console.log('Necesitas ${agua} mililitros de agua');
-} else if (cafe == v60){
-    agua = gramos * 16;
-    console.log('Necesitas ${agua} mililitros de agua');
-}
+// if (cafe == francesa){
+//     agua = gramos * 15;
+//     console.log('Necesitas ${agua} mililitros de agua');
+// } else if (cafe == moka){
+//     agua = gramos * 14;
+//     console.log('Necesitas ${agua} mililitros de agua');
+// } else if (cafe == v60){
+//     agua = gramos * 16;
+//     console.log('Necesitas ${agua} mililitros de agua');
+// }
+
+let personas = Number(prompt('Cuantas personas asistieron a la cena?'));
+let abeja = prompt('Ingrese el nombre de la persona que mas comio');
+let valorCuenta = Number(prompt('Cual fue el valor total de la cuenta'));
+let valorNormal = (valorCuenta / (personas + 1));
+let totalAbeja = 2 * valorNormal;
+
+console.log(`La persona que mas comio fue ${abeja} y debe pagar ${totalAbeja}, los demas asistentes deben pagar ${valorNormal}`);
