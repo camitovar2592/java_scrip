@@ -122,18 +122,22 @@
 //         console.log(`El numero ${i} es impar`)
 //     }
 
+// // }
+
+
+// for (let i = 1; i <= 50; i++){
+
+//     if (i % 3 ===0 && i% 5 ===0) {
+//         console.log(`${i} FIZZBOZZ`)
+//     } else if (i % 3 ===0) {
+//         console.log(`${i} FIZZ`)
+//     } else if (i % 5 ===0) {
+//         console.log(`${i} BOZZ`)
+        
+//     }
 // }
 
-
-for (let i = 1; i <= 50; i++){
-
-    if (i % 3 ===0 && i% 5 ===0) {
-        console.log(`${i} FIZZBOZZ`)
-    } else if (i % 3 ===0) {
-        console.log(`${i} FIZZ`)
-    } else if (i % 5 ===0) {
-        console.log(`${i} BOZZ`)
-        
-    }
-
-}
+let frutas = ['fresa', 'mora', 'kiwi'];
+let fruta = prompt('ingrese una fruta');
+frutas.push(fruta);
+console.log(frutas);
