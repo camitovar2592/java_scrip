@@ -135,9 +135,28 @@
 //         console.log(`${i} BOZZ`)
         
 //     }
+// // }
+
+// let frutas = ['fresa', 'mora', 'kiwi'];
+// let fruta = prompt('ingrese una fruta');
+// frutas.push(fruta);
+// console.log(frutas);
+
+
+// let total = 0;
+
+// for (let i = 0; 1<= i ; i++) {
+//     total += [i];    
 // }
 
-let frutas = ['fresa', 'mora', 'kiwi'];
-let fruta = prompt('ingrese una fruta');
-frutas.push(fruta);
-console.log(frutas);
+// console.log(total)
+
+
+let n = 3;
+let resultado = 1;
+
+for (let i = 1; i <= n; i++) {
+  resultado *= i;
+}
+
+console.log(resultado);
