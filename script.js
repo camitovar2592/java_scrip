@@ -92,12 +92,48 @@
 // } else if (cafe == v60){
 //     agua = gramos * 16;
 //     console.log('Necesitas ${agua} mililitros de agua');
+// // // }
+
+// let personas = Number(prompt('Cuantas personas asistieron a la cena?'));
+// let abeja = prompt('Ingrese el nombre de la persona que mas comio');
+// let valorCuenta = Number(prompt('Cual fue el valor total de la cuenta'));
+// let valorNormal = (valorCuenta / (personas + 1));
+// let totalAbeja = 2 * valorNormal;
+
+// console.log(`La persona que mas comio fue ${abeja} y debe pagar ${totalAbeja}, los demas asistentes deben pagar ${valorNormal}`);
+
+
+
+// let pregunta = prompt('cuantas veces quieres repetir el ejercicio?')
+
+// for (let i = 0; i <= pregunta; i++) {
+//     let salario = prompt('Dime tu salario en COP');
+//     let salarioUS = salario / 3100;
+
+//     console.log(`Hola tu salario en Us es ${salarioUS}`)
+
+// // }
+
+// for (let i = 1; i <= 50; i++){
+
+//     if (i % 2 ===0 ) {
+//         console.log(`El numero ${i} es par`)
+//     } else {
+//         console.log(`El numero ${i} es impar`)
+//     }
+
 // }
 
-let personas = Number(prompt('Cuantas personas asistieron a la cena?'));
-let abeja = prompt('Ingrese el nombre de la persona que mas comio');
-let valorCuenta = Number(prompt('Cual fue el valor total de la cuenta'));
-let valorNormal = (valorCuenta / (personas + 1));
-let totalAbeja = 2 * valorNormal;
 
-console.log(`La persona que mas comio fue ${abeja} y debe pagar ${totalAbeja}, los demas asistentes deben pagar ${valorNormal}`);
+for (let i = 1; i <= 50; i++){
+
+    if (i % 3 ===0 && i% 5 ===0) {
+        console.log(`${i} FIZZBOZZ`)
+    } else if (i % 3 ===0) {
+        console.log(`${i} FIZZ`)
+    } else if (i % 5 ===0) {
+        console.log(`${i} BOZZ`)
+        
+    }
+
+}
