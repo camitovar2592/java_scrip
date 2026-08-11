@@ -145,18 +145,61 @@
 
 // let total = 0;
 
-// for (let i = 0; 1<= i ; i++) {
-//     total += [i];    
+// for (let i = 1; i <= 10 ; i++) {
+//     total += i;    
 // }
 
 // console.log(total)
 
 
-let n = 3;
-let resultado = 1;
+// let n = Number(prompt('Ingrese un numero'));
+// let resultado = 1;
 
-for (let i = 1; i <= n; i++) {
-  resultado *= i;
-}
+// for (let i = 1; i <= n; i++) {
+//   resultado *= i;
+// }
 
-console.log(resultado);
+// console.log(resultado);
+
+
+// let carros = ['bmw', 'audi', 'mazda', 'hyundai']
+// let carroCliente = prompt('Cual carro busca?')
+// let existe= carros.includes(carroCliente);
+
+// if(existe){
+//     console.log('Si lo tenemos')
+// } else{
+//     console.log('No hay')
+// }
+
+
+// let numeros = [1,2,3,4,5,6,7,8,9,10];
+// let pares = [];
+// let impares = [];
+
+// for (let i = 0; i < numeros.length; i++) {
+    
+//     if(numeros[i] % 2 ===0){
+//         pares.push(numeros[i])
+//     } else {
+//         impares.push(numeros[i])
+//     }   
+// }
+
+// console.log('numeros pares: ' + pares)
+// // console.log('numeros impares: ' + impares)
+
+
+// let hashes = ['g45h35j57jhe5h', '3g56he5h', 'w54g3', 'g357hwwhh57', 'w46tg', 'g56hg464w'];
+// let inseguras = [];
+// let seguras = [];
+
+// for (let i = 0; i < hashes.length; i++){
+//     let longitudPass = hashes[i].length;
+//     console.log(longitudPass);
+
+//     if (condition) {
+        
+//     }
+// }
+
