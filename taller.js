@@ -20,10 +20,10 @@ for (let i = 2; i <= 20; i += 2) {
 
 // Ejercicio 4
 
-let numeros1 = [15, 80, 23, 120, 67, 351];
+let numeros1 = [15, 80, 23, 120, 67, 35138];
 let numeroMayor = numeros1[0];
 
-for (let i = 1; i < numeros1.length; i++) {
+for (let i = 0; i < numeros1.length; i++) {
   if (numeros1[i] > numeroMayor) {
     numeroMayor = numeros1[i];
   }
@@ -33,5 +33,19 @@ console.log("El numero mayor es: " + numeroMayor);
 
 // Ejercicio 5
 
+let productos = [
+  { nombre: "gafas", precio: 250 },
+  { nombre: "gorra", precio: 400 },
+  { nombre: "camisa", precio: 600 },
+  { nombre: "pantalon", precio: 750}
+];
 
+let precioTotal = 0;
 
+for (let i = 0; i < productos.length; i++) {
+  precioTotal += productos[i].precio;
+}
+
+console.log("El precio total es: " + precioTotal);
+
+// 
