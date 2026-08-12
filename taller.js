@@ -64,4 +64,25 @@ for (let i = 0; i < estudiantes.length; i++) {
   }
 }
 
+// Ejercicio 7
+
+let ejercicios = [
+  { nombre: "Sentadillas", peso: 80 },
+  { nombre: "Press banca", peso: 60 },
+  { nombre: "Peso muerto", peso: 120 },
+  { nombre: "Dominadas lastradas", peso: 25 }
+];
+
+let maximoPeso = ejercicios[0].peso;
+let ejercicioMasPesado = ejercicios[0].nombre;
+
+for (let i = 1; i < ejercicios.length; i++) {
+  if (ejercicios[i].peso > maximoPeso) {
+    maximoPeso = ejercicios[i].peso;
+    ejercicioMasPesado = ejercicios[i].nombre;
+  }
+}
+
+console.log("El ejercicio más pesado es: " + ejercicioMasPesado + " con " + maximoPeso + " kg");
+
 //
