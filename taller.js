@@ -48,4 +48,20 @@ for (let i = 0; i < productos.length; i++) {
 
 console.log("El precio total es: " + precioTotal);
 
-// 
+// Ejercicio 6
+
+let estudiantes = [
+  { nombre: "Ana", nota: 4.5 },
+  { nombre: "Pedro", nota: 2.8 },
+  { nombre: "Laura", nota: 4.0 },
+  { nombre: "Carlos", nota: 2.5 },
+  { nombre: "Maicol", nota: 5.0 }
+];
+
+for (let i = 0; i < estudiantes.length; i++) {
+  if (estudiantes[i].nota >= 3.0) {
+    console.log(estudiantes[i].nombre + " - " + estudiantes[i].nota);
+  }
+}
+
+//
