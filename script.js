@@ -133,7 +133,7 @@
 //         console.log(`${i} FIZZ`)
 //     } else if (i % 5 ===0) {
 //         console.log(`${i} BOZZ`)
-        
+
 //     }
 // // }
 
@@ -178,7 +178,7 @@
 // let impares = [];
 
 // for (let i = 0; i < numeros.length; i++) {
-    
+
 //     if(numeros[i] % 2 ===0){
 //         pares.push(numeros[i])
 //     } else {
@@ -199,7 +199,7 @@
 //     console.log(longitudPass);
 
 //     if (condition) {
-        
+
 //     }
 // }
 
@@ -218,28 +218,28 @@ const productos = [
         stock: 51,
         modelo: 2025
     },
-        {
+    {
         nombre: 'Licuadora',
         marca: 'Ninja',
         precio: 40,
         stock: 5,
         modelo: 2010
     },
-        {
+    {
         nombre: 'Smart Whatch',
         marca: 'Garmin',
         precio: 360,
         stock: 94,
         modelo: 2026
     },
-        {
+    {
         nombre: 'TV',
         marca: 'Samgsung',
         precio: 406,
         stock: 120,
         modelo: 2021
     },
-        {
+    {
         nombre: 'Laptop',
         marca: 'Asus',
         precio: 505,
@@ -249,17 +249,26 @@ const productos = [
 ];
 
 let inversionTotal = 0
+let product = productos[0].nombre
+let productoMasCaro = productos[0].precio
+let productoMasSePago = ''
 
-// recorrer el array, calcular cuanto se invirtio en todos los productos 
+for (let i = 0; i < productos.length; i++) {
 
-for (let i = 0; i< productos.length; i++){
-    
-    //console.log(productos[i].precio)
-    let inversionTotal = productos[i].precio * productos[i].stock
+    let inversion = productos[i].precio * productos[i].stock
+    inversionTotal = inversionTotal + inversion
 
-    console.log(productos[i].nombre)
-    console.log(inversionTotal)
-
-    
+    if (productos[i].precio > productoMasCaro) {
+        productoMasCaro = productos[i].precio;
+        product = productos[i].nombre;
+    }
 
 }
+//  else (producto[i].precio < productoMasEconomico) {
+//         productoMasEconomico = producto[i].precio;
+
+// }
+
+console.log(inversionTotal)
+
+console.log(`el producto mas caro costo es el ${product} $ ${productoMasCaro}`)
