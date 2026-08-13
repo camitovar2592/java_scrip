@@ -203,3 +203,63 @@
 //     }
 // }
 
+const productos = [
+    {
+        nombre: 'Celular',
+        marca: 'Apple',
+        precio: 240,
+        stock: 10,
+        modelo: 2014
+    },
+    {
+        nombre: 'Tablet',
+        marca: 'Lenovo',
+        precio: 110,
+        stock: 51,
+        modelo: 2025
+    },
+        {
+        nombre: 'Licuadora',
+        marca: 'Ninja',
+        precio: 40,
+        stock: 5,
+        modelo: 2010
+    },
+        {
+        nombre: 'Smart Whatch',
+        marca: 'Garmin',
+        precio: 360,
+        stock: 94,
+        modelo: 2026
+    },
+        {
+        nombre: 'TV',
+        marca: 'Samgsung',
+        precio: 406,
+        stock: 120,
+        modelo: 2021
+    },
+        {
+        nombre: 'Laptop',
+        marca: 'Asus',
+        precio: 505,
+        stock: 96,
+        modelo: 2000
+    },
+];
+
+let inversionTotal = 0
+
+// recorrer el array, calcular cuanto se invirtio en todos los productos 
+
+for (let i = 0; i< productos.length; i++){
+    
+    //console.log(productos[i].precio)
+    let inversionTotal = productos[i].precio * productos[i].stock
+
+    console.log(productos[i].nombre)
+    console.log(inversionTotal)
+
+    
+
+}
