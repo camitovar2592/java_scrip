@@ -1,7 +1,10 @@
 import { estudiantes } from "./datos.js";
-import { estudianteEdad} from "./funciones.js";
+import { pagaMas} from "./funciones.js";
 
-estudianteEdad(estudiantes)
+pagaMas(estudiantes)
+
+
+
 // mostrarNombres(estudiantes)
 // console.log(`---------------------------`)
 // mostrarEdad(estudiantes)

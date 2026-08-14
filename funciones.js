@@ -4,7 +4,6 @@
 //     }
 // }
 
-
 // export function mostrarEdad(array) {
 //     for (let i = 0; i < array.length; i++) {
 //         console.log(array[i].edad)
@@ -31,14 +30,16 @@
 //     }
 // }
 
-export function estudianteEdad(array){
-    for (let i = 0; i < array.length; i++) {
-        if (array[i].edad >= 18) {
-            console.log(`${array[i].nombre} Es mayor de edad con ${array[i].edad}`)
-        } else console.log(`${array[i].nombre} Es menor de edad con ${array[i].edad}`);
+///////////////////////////////////////////////////
+
+// export function estudianteEdad(array){
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i].edad >= 18) {
+//             console.log(`${array[i].nombre} Es mayor de edad con ${array[i].edad}`)
+//         } else console.log(`${array[i].nombre} Es menor de edad con ${array[i].edad}`);
         
-    }
-}
+//     }
+// }
 
 ////////////////////////////////////////////////////
 
@@ -67,3 +68,14 @@ export function estudianteEdad(array){
 //         console.log('reprobado')
 //     }
 // }
+
+export function pagaMas(array) {
+    let precioSemestre = 0
+    for (let i = 0; i < array.length; i++) {
+        if(array[i].precioSemestre > precioSemestre){
+            array[i].precioSemestre = precioSemestre
+        }
+            ;
+        
+    }
+}
