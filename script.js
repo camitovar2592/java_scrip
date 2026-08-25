@@ -354,8 +354,11 @@ function depositar() {
     if (deposito <= 0) {
         alert('Error')
     }
-    else (deposito > 0) {
+    else if (deposito > 0) {
         saldo = saldo + deposito
         alert(`depositaste ${deposito}`)
+    }
+    else {
+        
     }
 }
