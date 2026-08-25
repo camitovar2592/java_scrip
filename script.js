@@ -286,6 +286,9 @@ do {
     3) Retirar
     4) Depositar
     5) Salir
+    6) ver retiros
+    7) ver depositos
+    8) ver transferencias
     
     `));
 

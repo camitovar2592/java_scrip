@@ -82,6 +82,8 @@
 
 let saldo = 2_000_000;
 
+
+
 export function consultarSaldo() {
     alert('Tu saldo es: ' + saldo)
 }
@@ -89,11 +91,14 @@ export function consultarSaldo() {
 export function transferir() {
     let persona = prompt(`Ingrese la persona para transferencia`);
     let valorTransferir = Number(prompt(`Ingrese el valor a transferir`));
-    if (valorTransferir > saldo) {
+
+    let impuestoTransfer = (valorTransferir * 4) / 1000
+let saldoRetirableT = saldo - impuestoTransfer
+    if (valorTransferir > saldoRetirableT) {
         alert('Fondos insuficientes')
     }
     else if (valorTransferir > 0) {
-        saldo = saldo - valorTransferir
+        saldo = saldo - valorTransferir - impuestoTransfer
         alert(`enviasté ${valorTransferir} a ${persona}`)
     }
     else {
@@ -103,11 +108,14 @@ export function transferir() {
 
 export function retirar() {
     let retiro = Number(prompt(`Ingrese el valor a retirar`))
-    if (retiro > saldo) {
+    
+let impuestoRetiro = retiro * 4 / 1000
+let saldoRetirableR = saldo - impuestoRetiro
+    if (retiro > saldoRetirableR) {
         alert('Fondos insuficientes')
     }
     else if (retiro > 0) {
-        saldo = saldo - retiro
+        saldo = saldo - retiro - impuestoRetiro
         alert(`retiraste ${retiro}`)
     }
     else {
@@ -128,3 +136,4 @@ export function depositar() {
         
     }
 }
+
