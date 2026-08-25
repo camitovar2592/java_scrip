@@ -203,72 +203,148 @@
 //     }
 // }
 
-const productos = [
-    {
-        nombre: 'Celular',
-        marca: 'Apple',
-        precio: 240,
-        stock: 10,
-        modelo: 2014
-    },
-    {
-        nombre: 'Tablet',
-        marca: 'Lenovo',
-        precio: 110,
-        stock: 51,
-        modelo: 2025
-    },
-    {
-        nombre: 'Licuadora',
-        marca: 'Ninja',
-        precio: 40,
-        stock: 5,
-        modelo: 2010
-    },
-    {
-        nombre: 'Smart Whatch',
-        marca: 'Garmin',
-        precio: 360,
-        stock: 94,
-        modelo: 2026
-    },
-    {
-        nombre: 'TV',
-        marca: 'Samgsung',
-        precio: 406,
-        stock: 120,
-        modelo: 2021
-    },
-    {
-        nombre: 'Laptop',
-        marca: 'Asus',
-        precio: 505,
-        stock: 96,
-        modelo: 2000
-    },
-];
+// // const productos = [
+//     {
+//         nombre: 'Celular',
+//         marca: 'Apple',
+//         precio: 240,
+//         stock: 10,
+//         modelo: 2014
+//     },
+//     {
+//         nombre: 'Tablet',
+//         marca: 'Lenovo',
+//         precio: 110,
+//         stock: 51,
+//         modelo: 2025
+//     },
+//     {
+//         nombre: 'Licuadora',
+//         marca: 'Ninja',
+//         precio: 40,
+//         stock: 5,
+//         modelo: 2010
+//     },
+//     {
+//         nombre: 'Smart Whatch',
+//         marca: 'Garmin',
+//         precio: 360,
+//         stock: 94,
+//         modelo: 2026
+//     },
+//     {
+//         nombre: 'TV',
+//         marca: 'Samgsung',
+//         precio: 406,
+//         stock: 120,
+//         modelo: 2021
+//     },
+//     {
+//         nombre: 'Laptop',
+//         marca: 'Asus',
+//         precio: 505,
+//         stock: 96,
+//         modelo: 2000
+//     },
+// ];
 
-let inversionTotal = 0
-let product = productos[0].nombre
-let productoMasCaro = productos[0].precio
-let productoMasSePago = ''
+// let inversionTotal = 0
+// let product = productos[0].nombre
+// let productoMasCaro = productos[0].precio
+// let productoMasSePago = ''
 
-for (let i = 0; i < productos.length; i++) {
+// for (let i = 0; i < productos.length; i++) {
 
-    let inversion = productos[i].precio * productos[i].stock
-    inversionTotal = inversionTotal + inversion
+//     let inversion = productos[i].precio * productos[i].stock
+//     inversionTotal = inversionTotal + inversion
 
-    if (productos[i].precio > productoMasCaro) {
-        productoMasCaro = productos[i].precio;
-        product = productos[i].nombre;
-    }
-
-}
-//  else (producto[i].precio < productoMasEconomico) {
-//         productoMasEconomico = producto[i].precio;
+//     if (productos[i].precio > productoMasCaro) {
+//         productoMasCaro = productos[i].precio;
+//         product = productos[i].nombre;
+//     }
 
 // }
+// //  else (producto[i].precio < productoMasEconomico) {
+// //         productoMasEconomico = producto[i].precio;
 
-console.log(inversionTotal)
+// // }
 
-console.log(`el producto mas caro costo es el ${product} $ ${productoMasCaro}`)
+// console.log(inversionTotal)
+
+// console.log(`el producto mas caro costo es el ${product} $ ${productoMasCaro}`)
+
+
+let saldo = 2_000_000;
+let option;
+
+do {
+    option = Number(prompt(`
+    BIENVENIDO A SU CUENTA.
+    Selecciona una opción:
+    1) Ver saldo
+    2) Transferir
+    3) Retirar
+    4) Depositar
+    5) Salir
+    
+    `));
+
+    if (option == 1) {
+        consultarSaldo()
+    }
+    else if (option == 2) {
+
+        transferir()
+        consultarSaldo()
+    }
+    else if (option == 3) {
+        retirar()
+        consultarSaldo()
+    }
+    else if (option == 4) {
+        alert('depositar')
+    }
+    else if (option == 5) {
+        alert('Saliendo de la sesion')
+    }
+    else {
+        alert('Reintente de nuevo')
+    }
+
+} while (option != 5);
+
+// funciones:
+
+function consultarSaldo() {
+    alert('Tu saldo es: ' + saldo)
+}
+
+function transferir() {
+    let persona = prompt(`Ingrese la persona para transferencia`);
+    let valorTransferir = Number(prompt(`Ingrese el valor a transferir`));
+    if (valorTransferir > saldo) {
+        alert('Fondos insuficientes')
+    }
+    else if (valorTransferir > 0) {
+        saldo = saldo - valorTransferir
+        alert(`enviasté ${valorTransferir} a ${persona}`)
+    }
+    else {
+        alert('Error calculo')
+    }
+}
+
+function retirar() {
+    let retiro = Number(prompt(`Ingrese el valor a retirar`))
+    if (retiro > saldo) {
+        alert('Fondos insuficientes')
+    }
+    else if (retiro > 0) {
+        saldo = saldo - retiro
+        alert(`retiraste ${retiro}`)
+    }
+    else {
+        alert('Error calculo')
+    }
+}
+
