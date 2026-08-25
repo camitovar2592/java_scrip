@@ -302,7 +302,8 @@ do {
         consultarSaldo()
     }
     else if (option == 4) {
-        alert('depositar')
+        depositar()
+        consultarSaldo()
     }
     else if (option == 5) {
         alert('Saliendo de la sesion')
@@ -348,3 +349,13 @@ function retirar() {
     }
 }
 
+function depositar() {
+    let deposito = Number(prompt(`Ingrese el valor a depositar`))
+    if (deposito <= 0) {
+        alert('Error')
+    }
+    else (deposito > 0) {
+        saldo = saldo + deposito
+        alert(`depositaste ${deposito}`)
+    }
+}
