@@ -67,15 +67,64 @@
 //     } else {
 //         console.log('reprobado')
 //     }
+// // }
+
+// export function pagaMas(array) {
+//     let precioSemestre = 0
+//     for (let i = 0; i < array.length; i++) {
+//         if(array[i].precioSemestre > precioSemestre){
+//             array[i].precioSemestre = precioSemestre
+//         }
+//             ;
+        
+//     }
 // }
 
-export function pagaMas(array) {
-    let precioSemestre = 0
-    for (let i = 0; i < array.length; i++) {
-        if(array[i].precioSemestre > precioSemestre){
-            array[i].precioSemestre = precioSemestre
-        }
-            ;
+let saldo = 2_000_000;
+
+export function consultarSaldo() {
+    alert('Tu saldo es: ' + saldo)
+}
+
+export function transferir() {
+    let persona = prompt(`Ingrese la persona para transferencia`);
+    let valorTransferir = Number(prompt(`Ingrese el valor a transferir`));
+    if (valorTransferir > saldo) {
+        alert('Fondos insuficientes')
+    }
+    else if (valorTransferir > 0) {
+        saldo = saldo - valorTransferir
+        alert(`enviasté ${valorTransferir} a ${persona}`)
+    }
+    else {
+        alert('Error calculo')
+    }
+}
+
+export function retirar() {
+    let retiro = Number(prompt(`Ingrese el valor a retirar`))
+    if (retiro > saldo) {
+        alert('Fondos insuficientes')
+    }
+    else if (retiro > 0) {
+        saldo = saldo - retiro
+        alert(`retiraste ${retiro}`)
+    }
+    else {
+        alert('Error calculo')
+    }
+}
+
+export function depositar() {
+    let deposito = Number(prompt(`Ingrese el valor a depositar`))
+    if (deposito <= 0) {
+        alert('Error')
+    }
+    else if (deposito > 0) {
+        saldo = saldo + deposito
+        alert(`depositaste ${deposito}`)
+    }
+    else {
         
     }
 }

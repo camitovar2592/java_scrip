@@ -273,8 +273,8 @@
 
 // console.log(`el producto mas caro costo es el ${product} $ ${productoMasCaro}`)
 
+import {consultarSaldo, transferir, retirar, depositar} from './funciones.js'
 
-let saldo = 2_000_000;
 let option;
 
 do {
@@ -313,52 +313,3 @@ do {
     }
 
 } while (option != 5);
-
-// funciones:
-
-function consultarSaldo() {
-    alert('Tu saldo es: ' + saldo)
-}
-
-function transferir() {
-    let persona = prompt(`Ingrese la persona para transferencia`);
-    let valorTransferir = Number(prompt(`Ingrese el valor a transferir`));
-    if (valorTransferir > saldo) {
-        alert('Fondos insuficientes')
-    }
-    else if (valorTransferir > 0) {
-        saldo = saldo - valorTransferir
-        alert(`enviasté ${valorTransferir} a ${persona}`)
-    }
-    else {
-        alert('Error calculo')
-    }
-}
-
-function retirar() {
-    let retiro = Number(prompt(`Ingrese el valor a retirar`))
-    if (retiro > saldo) {
-        alert('Fondos insuficientes')
-    }
-    else if (retiro > 0) {
-        saldo = saldo - retiro
-        alert(`retiraste ${retiro}`)
-    }
-    else {
-        alert('Error calculo')
-    }
-}
-
-function depositar() {
-    let deposito = Number(prompt(`Ingrese el valor a depositar`))
-    if (deposito <= 0) {
-        alert('Error')
-    }
-    else if (deposito > 0) {
-        saldo = saldo + deposito
-        alert(`depositaste ${deposito}`)
-    }
-    else {
-        
-    }
-}
