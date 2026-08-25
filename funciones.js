@@ -26,7 +26,7 @@
 //     for (let i = 0; i < array.length; i++) {
 //         if(array[i].notaFinal>=3.5);       
 //    console.log('aprobado')
-        
+
 //     }
 // }
 
@@ -37,7 +37,7 @@
 //         if (array[i].edad >= 18) {
 //             console.log(`${array[i].nombre} Es mayor de edad con ${array[i].edad}`)
 //         } else console.log(`${array[i].nombre} Es menor de edad con ${array[i].edad}`);
-        
+
 //     }
 // }
 
@@ -76,7 +76,7 @@
 //             array[i].precioSemestre = precioSemestre
 //         }
 //             ;
-        
+
 //     }
 // }
 
@@ -91,9 +91,8 @@ export function consultarSaldo() {
 export function transferir() {
     let persona = prompt(`Ingrese la persona para transferencia`);
     let valorTransferir = Number(prompt(`Ingrese el valor a transferir`));
-
     let impuestoTransfer = (valorTransferir * 4) / 1000
-let saldoRetirableT = saldo - impuestoTransfer
+    let saldoRetirableT = saldo - impuestoTransfer
     if (valorTransferir > saldoRetirableT) {
         alert('Fondos insuficientes')
     }
@@ -108,9 +107,9 @@ let saldoRetirableT = saldo - impuestoTransfer
 
 export function retirar() {
     let retiro = Number(prompt(`Ingrese el valor a retirar`))
-    
-let impuestoRetiro = retiro * 4 / 1000
-let saldoRetirableR = saldo - impuestoRetiro
+
+    let impuestoRetiro = retiro * 4 / 1000
+    let saldoRetirableR = saldo - impuestoRetiro
     if (retiro > saldoRetirableR) {
         alert('Fondos insuficientes')
     }
@@ -133,7 +132,7 @@ export function depositar() {
         alert(`depositaste ${deposito}`)
     }
     else {
-        
+
     }
 }
 
