@@ -81,8 +81,9 @@
 // }
 
 let saldo = 2_000_000;
-
-
+let historialRetiros = [];
+let historialDepositos = [];
+let historialTransferencia = [];
 
 export function consultarSaldo() {
     alert('Tu saldo es: ' + saldo)
@@ -115,6 +116,7 @@ export function retirar() {
     }
     else if (retiro > 0) {
         saldo = saldo - retiro - impuestoRetiro
+        historialRetiros.push(retiro)
         alert(`retiraste ${retiro}`)
     }
     else {
@@ -129,6 +131,7 @@ export function depositar() {
     }
     else if (deposito > 0) {
         saldo = saldo + deposito
+        historialDepositos.push(deposito)
         alert(`depositaste ${deposito}`)
     }
     else {
@@ -136,3 +139,10 @@ export function depositar() {
     }
 }
 
+export function verRetiros(){
+    alert(historialRetiros)
+}
+
+export function verDepositos(){
+    alert(historialDepositos)
+}

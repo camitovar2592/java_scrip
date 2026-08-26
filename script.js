@@ -273,7 +273,7 @@
 
 // console.log(`el producto mas caro costo es el ${product} $ ${productoMasCaro}`)
 
-import {consultarSaldo, transferir, retirar, depositar} from './funciones.js'
+import {consultarSaldo, transferir, retirar, depositar, verRetiros, verDepositos} from './funciones.js'
 
 let option;
 
@@ -286,9 +286,9 @@ do {
     3) Retirar
     4) Depositar
     5) Salir
-    6) ver retiros
-    7) ver depositos
-    8) ver transferencias
+    6) Ver retiros
+    7) Ver depositos
+    8) Ver transferencias
     
     `));
 
@@ -311,8 +311,15 @@ do {
     else if (option == 5) {
         alert('Saliendo de la sesion')
     }
+    else if (option == 6) {
+        verRetiros();
+    }
+    else if (option == 7) {
+        verDepositos();
+    }
     else {
         alert('Reintente de nuevo')
     }
 
 } while (option != 5);
+
