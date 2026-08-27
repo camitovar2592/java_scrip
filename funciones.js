@@ -78,71 +78,77 @@
 //             ;
 
 //     }
+// // }
+
+
+// //////////////////////////////////////////////////
+
+// let saldo = 2_000_000;
+// let historialRetiros = [];
+// let historialDepositos = [];
+// let historialTransferencia = [];
+
+// export function consultarSaldo() {
+//     alert('Tu saldo es: ' + saldo)
 // }
 
-let saldo = 2_000_000;
-let historialRetiros = [];
-let historialDepositos = [];
-let historialTransferencia = [];
+// export function transferir() {
+//     let persona = prompt(`Ingrese la persona para transferencia`);
+//     let valorTransferir = Number(prompt(`Ingrese el valor a transferir`));
+//     let impuestoTransfer = (valorTransferir * 4) / 1000
+//     let saldoRetirableT = saldo - impuestoTransfer
+//     if (valorTransferir > saldoRetirableT) {
+//         alert('Fondos insuficientes')
+//     }
+//     else if (valorTransferir > 0) {
+//         saldo = saldo - valorTransferir - impuestoTransfer
+//         alert(`enviasté ${valorTransferir} a ${persona}`)
+//     }
+//     else {
+//         alert('Error calculo')
+//     }
+// }
 
-export function consultarSaldo() {
-    alert('Tu saldo es: ' + saldo)
-}
+// export function retirar() {
+//     let retiro = Number(prompt(`Ingrese el valor a retirar`))
 
-export function transferir() {
-    let persona = prompt(`Ingrese la persona para transferencia`);
-    let valorTransferir = Number(prompt(`Ingrese el valor a transferir`));
-    let impuestoTransfer = (valorTransferir * 4) / 1000
-    let saldoRetirableT = saldo - impuestoTransfer
-    if (valorTransferir > saldoRetirableT) {
-        alert('Fondos insuficientes')
-    }
-    else if (valorTransferir > 0) {
-        saldo = saldo - valorTransferir - impuestoTransfer
-        alert(`enviasté ${valorTransferir} a ${persona}`)
-    }
-    else {
-        alert('Error calculo')
-    }
-}
+//     let impuestoRetiro = retiro * 4 / 1000
+//     let saldoRetirableR = saldo - impuestoRetiro
+//     if (retiro > saldoRetirableR) {
+//         alert('Fondos insuficientes')
+//     }
+//     else if (retiro > 0) {
+//         saldo = saldo - retiro - impuestoRetiro
+//         historialRetiros.push(retiro)
+//         alert(`retiraste ${retiro}`)
+//     }
+//     else {
+//         alert('Error calculo')
+//     }
+// }
 
-export function retirar() {
-    let retiro = Number(prompt(`Ingrese el valor a retirar`))
+// export function depositar() {
+//     let deposito = Number(prompt(`Ingrese el valor a depositar`))
+//     if (deposito <= 0) {
+//         alert('Error')
+//     }
+//     else if (deposito > 0) {
+//         saldo = saldo + deposito
+//         historialDepositos.push(deposito)
+//         alert(`depositaste ${deposito}`)
+//     }
+//     else {
 
-    let impuestoRetiro = retiro * 4 / 1000
-    let saldoRetirableR = saldo - impuestoRetiro
-    if (retiro > saldoRetirableR) {
-        alert('Fondos insuficientes')
-    }
-    else if (retiro > 0) {
-        saldo = saldo - retiro - impuestoRetiro
-        historialRetiros.push(retiro)
-        alert(`retiraste ${retiro}`)
-    }
-    else {
-        alert('Error calculo')
-    }
-}
+//     }
+// }
 
-export function depositar() {
-    let deposito = Number(prompt(`Ingrese el valor a depositar`))
-    if (deposito <= 0) {
-        alert('Error')
-    }
-    else if (deposito > 0) {
-        saldo = saldo + deposito
-        historialDepositos.push(deposito)
-        alert(`depositaste ${deposito}`)
-    }
-    else {
+// export function verRetiros(){
+//     alert(historialRetiros)
+// }
 
-    }
-}
+// export function verDepositos(){
+//     alert(historialDepositos)
+// }
 
-export function verRetiros(){
-    alert(historialRetiros)
-}
+// /////////////////////////////////////////////
 
-export function verDepositos(){
-    alert(historialDepositos)
-}
